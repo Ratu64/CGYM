@@ -15,7 +15,7 @@ background-color: transparent;
 color:white;
 border: 1px solid transparent;
 }
-nav a:link,a:visited,a:hover,a:active{
+a:link,a:visited,a:hover,a:active{
 text-decoration: none;
 color:white;
 font-weight:bold;
