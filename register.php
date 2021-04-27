@@ -81,14 +81,14 @@
 		<?php
 			if(isset($_POST['signup-submit']))
 			{
-				@$username=$_POST['User'];
-				@$password=$_POST['Pass'];
-				@$cpassword=$_POST['ConPass'];
-                @$age=$_POST['Age'];
-				@$email=$_POST['Email'];
-				@$goal=$_POST['Goal'];
-                @$cw=$_POST['cw'];
-				@$dw=$_POST['dw'];
+				$username=$_POST['User'];
+				$password=$_POST['Pass'];
+				$cpassword=$_POST['ConPass'];
+                		$age=$_POST['Age'];
+				$email=$_POST['Email'];
+				$goal=$_POST['Goal'];
+                		$cw=$_POST['cw'];
+				$dw=$_POST['dw'];
 				
                 
 				if($password==$cpassword)
@@ -106,7 +106,7 @@
 						}
 						else
 						{
-							$query = "insert into users (user,password,email,goal,rolep_id,Plan,curwt,deswt) values ('$username','$password','$email','$goal',2,12,'$cw','$dw')";
+							$query = "insert into users (user,password,email,goal,rolep_id,Plan,curwt,deswt) values ('$username','$password','$email','$goal',2,'12','$cw','$dw')";
 							$query_run = mysqli_query($con,$query);
 							if($query_run)
 							{
@@ -127,7 +127,7 @@
 							}
 							else
 							{
-								echo '<p>Registration Unsuccessful due to server error. Please try later</p>';
+								echo '<script type="text/javascript">alert("Server error")</script>';
 							}
 						}
 					}
@@ -141,9 +141,6 @@
 					echo '<script type="text/javascript">alert("Password and Confirm Password do not match")</script>';
 				}
 				
-			}
-			else
-			{
 			}
 		?>
 </body>
