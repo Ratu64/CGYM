@@ -15,6 +15,11 @@ background-color: transparent;
 color:white;
 border: 1px solid transparent;
 }
+nav a:link,a:visited,a:hover,a:active{
+text-decoration: none;
+color:white;
+font-weight:bold;
+}
 </style>
 	<script src="https://kit.fontawesome.com/a076d05399.js">	</script>
 	
