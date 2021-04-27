@@ -105,7 +105,7 @@
 						}
 						else
 						{
-							$query = "insert into users (user,password,email,goal,rolep_id,Plan,curwt,deswt) values ('$username','$password','$email','$goal',2,11,'$cw','$dw')";
+							$query = "insert into users (user,password,email,goal,rolep_id,Plan,curwt,deswt) values ('$username','$password','$email','$goal',2,12,'$cw','$dw')";
 							$query_run = mysqli_query($con,$query);
 							if($query_run)
 							{
