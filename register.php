@@ -8,9 +8,9 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="96.css">
     <script>
-        var name=document.getElementsByName('User')[0].value();
+       /* var name=document.getElementsByName('User')[0].value();
         var email=document.getElementsByName('Email')[0].value();
-       /* function emvalid(email)
+        function emvalid(email)
       {
          var reg=/^[a-zA-Z0-9_]+@[a-zA-Z]+.[a-zA-Z]+$/;
          if(email.test(reg))
