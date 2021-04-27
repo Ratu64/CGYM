@@ -79,11 +79,11 @@
 
 </div>	
 <h2>Attendance Report:</h2>
+<h3>(Recent 30 days)</h3>
 <div id="view" class="view-attendance">
 
 	<?php
-		$view="select date,status from recp_attendance where email='".$_SESSION['email']."'";
-
+		$view="select date,status from recp_attendance where email='".$_SESSION['email']."' ORDER BY date desc LIMIT 30";
 
 	    $result=mysqli_query($con,$view);
 	    if (mysqli_num_rows($result) > 0) 
