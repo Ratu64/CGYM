@@ -10,7 +10,7 @@
 	$pass = 'Gwad14SjgG';
 	$charset = 'utf8mb4';
 
-	$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+	/*$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
 	try{
 	    $pdo = new PDO($dsn, $user,$pass);
@@ -18,8 +18,15 @@
 
 	} catch(PDOException $e) {
 	    throw new PDOException($e->getMessage());
-	} 
-	//console.log('Success');
+	} */
+	$con = mysqli_connect($host, $user, $pass);
+         if(! $con ) {
+            die('Could not connect: ' . mysqli_error());
+         }
+	if($con){
+		console.log('Success');
+	}
+	mysqli_select_db ($con,$db);
 ?>
 
 
