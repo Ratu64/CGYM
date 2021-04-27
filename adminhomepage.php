@@ -27,7 +27,7 @@
 <?php
 if(isset($_POST["init"]))
 {
-    $query = "select * from recp_attendance where date=curdate(); ";
+    $query = "select * from recp_attendance where date=CURRENT_DATE; ";
     $query_run = mysqli_query($con,$query);
     if($query_run)
     {
@@ -36,10 +36,8 @@ if(isset($_POST["init"]))
             echo '<script type="text/javascript">alert("Attendance already initialized today")</script>';
         }
         else{
-                $ql= "Insert into recp_attendance(email) select email from users";
+                $ql= "INSERT into recp_attendance(email,date) select email,CURRENT_DATE from users";
 		          $result = mysqli_query($con, $ql) ; 
-                $ql2= "Update recp_attendance set date = curdate() where date = '0000-00-00'";
-                 $result2 = mysqli_query($con, $ql2) ; 
             echo '<script type="text/javascript">alert("Attendance initialized!!")</script>';
         }
     }
