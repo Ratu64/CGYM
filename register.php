@@ -99,6 +99,7 @@
 				//echo mysql_num_rows($query_run);
 				if($query_run)
 					{
+						console.log('Success');
 						if(mysqli_num_rows($query_run)>0)
 						{
 							echo '<script type="text/javascript">alert("This Username Already exists.. Please try another username!")</script>';
@@ -112,16 +113,16 @@
 								echo '<script type="text/javascript">alert("User Registered.. Welcome")</script>';
                                 
                                 
-                                $_SESSION['id'] = $row['iduser'];
+                                				$_SESSION['id'] = $row['iduser'];
 								$_SESSION['username'] = $username;
 								$_SESSION['password'] = $password;
 								$_SESSION['age'] = $age;
-                                $_SESSION['email'] = $email;
+                                				$_SESSION['email'] = $email;
 								$_SESSION['goal'] = $goal;
-                                $_SESSION['cw'] = $cw;
+                                				$_SESSION['cw'] = $cw;
 								$_SESSION['dw'] = $dw;
                                 
-                                usleep(200000);
+                                				usleep(200000);
 								header( "Location: plan.php");
 							}
 							else
