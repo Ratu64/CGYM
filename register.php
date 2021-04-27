@@ -79,8 +79,10 @@
     </footer>
 
 		<?php
+			echo '<script type="text/javascript">alert("Opened")</script>';
 			if(isset($_POST['signup-submit']))
 			{
+				echo '<script type="text/javascript">alert("User Registered.. Welcome")</script>';
 				$username=$_POST['User'];
 				$password=$_POST['Pass'];
 				$cpassword=$_POST['ConPass'];
@@ -90,16 +92,16 @@
                 		$cw=$_POST['cw'];
 				$dw=$_POST['dw'];
 				
-                
+                		echo '<script type="text/javascript">alert("Var assn.")</script>';
 				if($password==$cpassword)
 				{
 					$query = "select * from users where user='$username'";
 					//echo $query;
-				$query_run = mysqli_query($con,$query);
-				//echo mysql_num_rows($query_run);
+					$query_run = mysqli_query($con,$query);
+					//echo mysql_num_rows($query_run);
 				if($query_run)
 					{
-						console.log('Success');
+						echo '<script type="text/javascript">alert("Successs")</script>';
 						if(mysqli_num_rows($query_run)>0)
 						{
 							echo '<script type="text/javascript">alert("This Username Already exists.. Please try another username!")</script>';
