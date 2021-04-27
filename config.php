@@ -19,7 +19,7 @@
 	} catch(PDOException $e) {
 	    throw new PDOException($e->getMessage());
 	} 
-	console.log('Success');
+	//console.log('Success');
 ?>
 
 
