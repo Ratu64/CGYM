@@ -6,7 +6,7 @@
 <html>
 <head>
     <title>Contact</title>
-    <link rel='stylesheet' type='text/css' href='contactstyle.css'> 
+    <link rel='stylesheet' type='text/css' href='css/surveystyle.css'> 
 </head>
 <body >
     
