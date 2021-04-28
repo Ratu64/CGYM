@@ -1,0 +1,12 @@
+.reg-ul li{
+    list-style-type: none;
+    
+}
+form{
+    
+}
+.conatiner-reg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

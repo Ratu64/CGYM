@@ -1,0 +1,111 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  
+}
+
+.top{
+	background-color: black;
+	font-size: 20px;
+}
+
+.top-ul{
+	display: flex;
+	justify-content: flex-end;
+}
+.top-li{
+	color: white;
+	list-style: none;
+	width: 110px;
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+.hello{
+    max-width:200px;
+}
+#notice_in{
+    padding: 50px;
+    font-size:20px;
+	background-color: black;
+	color: white;
+	font-family: "Comic Sans MS";
+    
+}
+
+.contain{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    
+  -webkit-column-width: 500px; /* Chrome, Safari, Opera */
+ 
+  column-width: 500px;
+
+}
+.contain table,th,td{
+	border-collapse: collapse;
+	border:1px  solid black;
+	width: 700px;
+}
+.contain table{
+	margin:20px 0px;
+}
+.contain th{
+	padding: 20px 0px;
+	font-size: 40px;
+}
+.goal{
+	margin: 50px 0 50px 50px;
+}
+.progress{
+	
+	width: 80%;
+	background-color: black;
+  border-radius: 13px;
+  /* (height of inner div) / 2 + padding */
+  padding: 3px;
+}
+a {
+	text-decoration:none;
+
+}
+
+#att{
+	margin-left: 50px;
+}
+a:hover{
+	color: rgb(230, 101, 23);
+}
+
+
+#slider{
+	 background-color:  green;
+  height: 20px;
+  border-radius: 10px;
+}
+.view-attendance{
+	padding:30px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.view-attendance table {
+  /*background-color: #0074D9;*/
+ 	
+  border-collapse: collapse;
+  width:600px;
+  color:WHITE;
+  font-family: monospace;
+  font-size: 25px;
+  text-align: center;
+}
+.view-attendance th{
+	background-color:black;
+	color:rgb(230, 101, 23);
+}
+.view-attendance tr:nth-child(even){
+	background-color:rgb(230, 101, 23);
+}
+

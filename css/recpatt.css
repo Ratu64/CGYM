@@ -1,0 +1,55 @@
+
+p{
+	color: white;
+	font-size: 90px;
+	font-family: "Comic Sans MS", Gadget, sans-serif;
+	 background: -webkit-linear-gradient( red, violet,blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.att{
+ margin-top: 5%;
+
+}
+label{
+	font-size: 25px;
+	color: white;
+	font-family: "Cambria", Gadget, sans-serif;
+}
+input{
+	width: 500px;
+	height: 50px;
+	background:transparent;
+	border-radius: 5px;
+	font-size: 25px;
+	font-family: "Times New Roman";
+	color: white;
+	border-width: 3px;
+}
+button{
+	margin-top: 40px;
+	width: 200px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background: linear-gradient(to right, red, orange);
+	color: black;
+	font-family: "Comic Sans MS";
+	font-size: 20px;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+}
+
+.logout a{
+	text-decoration: none;
+	color: white;
+	font-family: Cambria;
+	display: flex;
+	font-size: 20px;
+	margin-left: 90%;
+}
+
+a:hover{
+	cursor: pointer;
+}
