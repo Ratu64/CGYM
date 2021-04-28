@@ -14,10 +14,10 @@
         </script>
 
 		<?php
-$dbServername = "localhost";
-$dbUsername = "root";
-$dbPassword ="";
-$dbName = "gym";
+$dbServername = 'remotemysql.com:3306';
+$dbUsername = 'CGDycIpdYW';
+$dbPassword ='Gwad14SjgG';
+$dbName = 'CGDycIpdYW';
 
 
 $con = mysqli_connect($dbServername,$dbUsername,$dbPassword,$dbName);
