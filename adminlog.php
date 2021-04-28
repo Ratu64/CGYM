@@ -44,9 +44,16 @@
 					
 					   $_SESSION['username'] = $username;
 					   $_SESSION['password'] = $password;
-                        		
+                        		   if($username == "Ivaan")
+					   {
+						   usleep(200000);
+						    header( "Location: recp_attendance.php");
+					   }
+					   else
+					   {
 						usleep(200000);
-					header( "Location: adminhomepage.php");
+						header( "Location: adminhomepage.php");
+					   }
 					}
 					else
 					{
