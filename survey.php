@@ -1,15 +1,6 @@
 <?php
     session_start();
 	require_once('config.php');
-  $qr='select Uid from survey where Uid = '.$_SESSION['id'].' ';
-  $query_run = mysqli_query($con,$qr);
-  if (mysqli_num_rows( $query_run) > 0) 
-  {
-    echo '<script type="text/javascript">alert("You have already submitted your survey.")</script>';
-    usleep(200000);
-    header( "Location: userpage.php");
-    exit();
-  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -63,6 +54,17 @@
         $miss=$_POST['miss'];
         $recomm=$_POST['points'];
         
+	     $qr='select Uid from survey where Uid = '.$_SESSION['id'].' ';
+  	     $query_run = mysqli_query($con,$qr);
+  	     if (mysqli_num_rows( $query_run) > 0) 
+  	{
+	    echo '<script type="text/javascript">alert("You have already submitted your survey.")</script>';
+	    usleep(200000);
+	    header( "Location: userpage.php");
+	    exit();
+ 	 }
+	    
+	else{
         $ql="insert into survey(Uid,ques1,ques2,ques3,ques4) values (".$_SESSION['id'].",'".$appeal."','".$hear."','".$miss."','".$recomm."')";
         $query_run = mysqli_query($con,$ql);
        
@@ -77,6 +79,7 @@
           usleep(200000);
           header( "Location: userpage.php");
         }    
+	}
 }
 ?>
     </div>
