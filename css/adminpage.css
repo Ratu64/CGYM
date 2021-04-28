@@ -76,15 +76,9 @@ input{
 button{
     background-color: transparent;
     color:orange;
-    font-size: 32px;
-    font-family:Impact, Charcoal;
-    font-family: "Comic Sans MS";
-    margin:8px 8px 8px 8px;
-    text-align:center;
-    border: 1px solid transparent;
-    padding:10px 30px;
-	text-decoration: none;
-    text-shadow: 0 -1px 1px #FFF, 0 -2px 6px #ff0, 0 -10px 14px #ff8000, 0 -18px 32px #F00;
+    padding-left: 5px;
+    text-decoration: none;
+    text-decoration:underline white;
 }
 button:hover{
 	background-color:#fff;
