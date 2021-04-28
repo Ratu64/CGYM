@@ -74,19 +74,21 @@ input{
     text-align:center;
 }
 button{
+background-color: transparent;
+    color:orange;
+    font-size: 16px;
+    font-family:Impact, Charcoal;
+    font-family: "Comic Sans MS";
+    margin:8px 8px 8px 8px;
     text-align:center;
-	text-decoration:none;
-	color:orange;
-    margin-right: 20px;
-	margin: 10px;
-	padding:5px 20px;
-	border:1px solid transparent;
+    border: 1px solid transparent;
+    padding:10px 30px;
+	text-decoration: none;
+    text-shadow: 0 -1px 1px #FFF, 0 -2px 6px #ff0, 0 -10px 14px #ff8000, 0 -18px 32px #F00;
 }
 button:hover{
-	text-decoration:underline;
-    color:orange;
-    text-shadow: 0 -1px 1px #FFF, 0 -2px 6px #ff0, 0 -10px 14px #ff8000, 0 -18px 32px #F00;
-    margin-right: 20px;
+	background-color:#fff;
+    text-decoration:underline;
 }
 div{
     text-align:center;
