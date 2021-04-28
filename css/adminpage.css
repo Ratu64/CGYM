@@ -74,9 +74,9 @@ input{
     text-align:center;
 }
 button{
-background-color: transparent;
+    background-color: transparent;
     color:orange;
-    font-size: 16px;
+    font-size: 32px;
     font-family:Impact, Charcoal;
     font-family: "Comic Sans MS";
     margin:8px 8px 8px 8px;
