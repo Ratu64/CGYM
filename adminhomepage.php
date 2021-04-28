@@ -17,7 +17,6 @@
 	<div><form name="adminp" method="post">
 		<ul>
 			<li><button name="init" >Initialize Todays Attendance</button></li>
-			<li><a href="reception_attendance.php">Launch Attendance</a></li>
 			<li><a href="initatt.php">Update Notice Board</a></li>
 		</ul>
 		</form>
