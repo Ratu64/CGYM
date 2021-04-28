@@ -35,7 +35,6 @@
 
 			<li class="top-li"><a href="#view">Attendance</a></li>
 			<li class="top-li"><a href="logout.php">Log out</a></li>
-			<l1 class="top-li"><a href="survey.php">Survey</a></li>
 
 		</ul>
 	</div>
