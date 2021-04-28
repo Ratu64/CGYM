@@ -44,7 +44,8 @@
 					
 					   $_SESSION['username'] = $username;
 					   $_SESSION['password'] = $password;
-                        usleep(200000);
+                        		
+						usleep(200000);
 					header( "Location: adminhomepage.php");
 					}
 					else
