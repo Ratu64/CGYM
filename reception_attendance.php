@@ -34,10 +34,8 @@ if (isset($_POST['recp_submit'])){
 		 $result = mysqli_query($con, $ql) ;
 		 print_r($uni);
 		// THE BELOW COMMENTS PORTION IS USED TO AUTO INITIALIZE ATTENDACE DAILY ADD A BUTTON IN ADMIN SECTION TO INITIALIZE THIS
-
+		 echo '<script type="text/javascript">alert("Attendance Granted.")</script>';
 	   // $ql= "Insert into recp_attendance(email) select email from users";
-
-
 
   }
       ?>
