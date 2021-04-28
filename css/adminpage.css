@@ -74,14 +74,19 @@ input{
     text-align:center;
 }
 button{
-    background-color: transparent;
-    color:orange;
-    padding-left: 5px;
-    text-decoration:underline white;
+    text-align:center;
+	text-decoration:none;
+	color:orange;
+    margin-right: 20px;
+	margin: 10px;
+	padding:5px 20px;
+	border:1px solid transparent;
 }
 button:hover{
-	background-color:#fff;
-    text-decoration:underline;
+	text-decoration:underline;
+    color:orange;
+    text-shadow: 0 -1px 1px #FFF, 0 -2px 6px #ff0, 0 -10px 14px #ff8000, 0 -18px 32px #F00;
+    margin-right: 20px;
 }
 div{
     text-align:center;
