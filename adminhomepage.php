@@ -26,7 +26,9 @@
 <?php
 if(isset($_POST["init"]))
 {
-    $query = "select * from recp_attendance where date=CURRENT_DATE; ";
+    $d = date("Y-m-d");
+    date_default_timezone_set('Asia/Kolkata');
+    $query = "select * from recp_attendance where date=$d;";
     $query_run = mysqli_query($con,$query);
     if($query_run)
     {
