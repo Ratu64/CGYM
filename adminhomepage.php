@@ -37,7 +37,7 @@ if(isset($_POST["init"]))
             echo '<script type="text/javascript">alert("Attendance already initialized today")</script>';
         }
         else{
-                $ql= "INSERT into recp_attendance(email,date) select email,CURRENT_DATE from users";
+                $ql= "INSERT into recp_attendance(email,date) select email,$d from users";
 		          $result = mysqli_query($con, $ql) ; 
             echo '<script type="text/javascript">alert("Attendance initialized!!")</script>';
         }
