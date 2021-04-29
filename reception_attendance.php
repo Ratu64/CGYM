@@ -28,6 +28,7 @@ if (isset($_POST['recp_submit'])){
 	$uni=$_POST['recp_email'];
 
 	$date = date('Y-m-d');
+	date_default_timezone_set('Asia/Kolkata');
 
 		$ql="UPDATE recp_attendance set status ='Present' where date = '".$date."' and email='".$uni."'";
 
